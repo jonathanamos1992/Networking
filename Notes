@@ -13,7 +13,8 @@ ssh student@172.16.1.15 -L 2222:172.16.40.10:22
 Have to use -NT becuse it can alter commands and break your tunnel by putting you somewhere you don't want to be by interacting with your tunnel.
 
 Dynamic Port
-
+-Needed to run tools such as proxy chains to be able to enumerate a machine
+-When finished enumerating a host, change from proxy chains because you can only have one dynamic port open at a time.
 ssh T1user@T1 -p 1111 -D 9050 -NT
 
 
