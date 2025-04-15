@@ -12,5 +12,21 @@ ssh student@172.16.1.15 -L 2222:172.16.40.10:22
 
 Have to use -NT becuse it can alter commands and break your tunnel by putting you somewhere you don't want to be by interacting with your tunnel.
 
+Dynamic Port
+
+ssh T1user@T1 -p 1111 -D 9050 -NT
+
+
+Then changes to ssh T1user@T1 -p 1111 -L 2222:T2:22 -NT
+
 Protocols that use multiple ports:
 FTP uses proxychains
+
+Remote Port Forward
+-Changes perspective when running commands
+
+-When running scans, if you see that port 22 is blocked but telnet is open, use Telnet
+Find out which ports are open and what is on the ports
+
+When getting on a new device, enumerate and get situational awareness of where you are
+
