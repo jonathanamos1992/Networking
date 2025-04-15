@@ -32,3 +32,18 @@ If using a different port to connect, must use -p and specify port.
 
 When getting on a new device, enumerate and get situational awareness of where you are
 
+#Task 2 - Part 1
+
+6. ssh -L 1111:localhost:22 cctc@10.50.1.150 -NT
+
+12. ssh -L 2222:100.1.1.2:22 cctc@localhost -p 1111 -NT
+
+14. A. ssh -D 9050 cctc@localhost -p 2222 -NT
+
+17. D. ssh -p 2222 cctc@localhost -L 3333:192.168.2.2:23 -NT 
+
+18. B. telnet localhost 3333 
+
+19. C. ssh -R 4444:localhost:22 cctc@192.168.2.1 -NT
+
+20. A. ssh cctc@localhost -p 2222 -L 5555:localhost:4444 -NT
