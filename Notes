@@ -1,0 +1,16 @@
+Local Port Forwarding
+
+ssh -p <optional alt port> <user>@<server ip> -L <local bind port>:<tgt ip>:<tgt port>
+-p <optional alt port>
+
+-L whatever port where trying to open on our machine
+-
+
+Local Port Forward to remote target via server
+ssh student@172.16.1.15 -L 2222:172.16.40.10:22
+-<student on .10>
+
+Have to use -NT becuse it can alter commands and break your tunnel by putting you somewhere you don't want to be by interacting with your tunnel.
+
+Protocols that use multiple ports:
+FTP uses proxychains
